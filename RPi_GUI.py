@@ -1,4 +1,27 @@
-from guizero import App
+from guizero import App, Text, TextBox, PushButton, Slider
+'''
+Author: Derek Huang
+Lab 12: RPi GUI
+ELEC5650-01A
+07/26/2024
+'''
 
-app = App(title="Hello World")
-app.display()
+def cbButn_AddWord():
+    txtTale.value += " " + user_story.value
+    user_story.clear()
+
+def cbSldr_FontSize(slider_value):
+    txtTale.size = slider_value
+    font_size.value = f"Font Size: {slider_value}"
+
+if __name__ == '__main__':
+    global initFontSize
+    initFontSize = 12
+    app = App(title="Tales of Old by Derek")
+    txtTale = Text(app, text="Once upon a time", size=initFontSize, font="Times New Roman", color="red")
+    user_story = TextBox(app, width=30)
+    add_story = PushButton(app, command=cbButn_AddWord, text="Add to Story")
+    text_size = Slider(app, command=cbSldr_FontSize, start=4, end=40)
+    font_size = Text(app, text=f"Font Size: {initFontSize}") 
+    app.display()
+            
