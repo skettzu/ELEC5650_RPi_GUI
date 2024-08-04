@@ -95,7 +95,7 @@ def cbSldr_FontSize(slider_value):
 if __name__ == '__main__':
     global urlBase
     global initFontSize
-    urlBase = "https://script.google.com/macros/s/AKfycbzdwHxxaimndNQsxXqQsCE1GtKEHzXQSdu2-4Hm3FXoNLoyOwyi641TzXc2iv_wYi9s/exec"
+    urlBase = "https://script.google.com/macros/s/AKfycbwzKASayNBtM3Av7-rBt5BTLKPqlJEincxLbQk1kvg/dev"
     initFontSize = 12
     app = App(title="Tales of Old by Derek")
     txtTale = Text(app, text="Once upon a time", size=initFontSize, font="Times New Roman", color="red")
