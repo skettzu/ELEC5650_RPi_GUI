@@ -100,7 +100,7 @@ def cbSldr_DelayTime(slider_value):
 if __name__ == '__main__':
     global urlBase
     global initDelay
-    urlBase = "https://script.google.com/macros/s/AKfycbwzKASayNBtM3Av7-rBt5BTLKPqlJEincxLbQk1kvg/dev"
+    urlBase = "https://script.google.com/macros/library/d/1KI1AVEBQtapiRhgVJYCyFibObwJprqf69-3bvyEVtjeJCPmsqR3xKl7y/2"
     initDelay = 1
     app = App(title="MPU6050 Monitoring GUI")
     txtTime = Text(app, text="Please Select the Time Interval To Store Data (seconds):", size=10, font="Times New Roman", color="red")
